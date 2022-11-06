@@ -1,0 +1,102 @@
+/**
+    作者：xiaotupo
+    网址：https://xiaotupo.com
+*/
+
+* {
+    box-sizing: border-box;
+}
+a,a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.648);
+}
+
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    background-image: url(../images/bg.jpg);
+    font-size: 14px;
+}
+
+#main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+#main .card {
+    display: grid;
+    grid-template-rows: 80px auto 80px;
+    min-width: 600px;
+    min-height: 300px;
+    height: 350px;
+    background: #ccc;
+    opacity: 0.7;
+    border-radius: 45px;
+    filter: drop-shadow(0 0 35px #fff);
+    
+}
+
+#main .card:hover {
+    filter: drop-shadow(0 0 35px #ccc);
+}
+
+#title {
+    
+    font-family: "Trebuchet MS", Arial, "Lucida Grande", Verdana, Lucida, Helvetica, sans-serif;
+    color: #888;
+    text-align: center;
+}
+
+#title a {
+    color: #40612C;
+}
+
+.site-list {
+    text-align: center;
+    padding: 12px 0;
+}
+
+.site-list a {
+    background: #40612C;
+    color: #eee;
+    display: block;
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 1.5rem;
+}
+
+.site-list a:hover {
+    background-color: #348105;
+    color: white;
+}
+
+.footer {
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #40612c14;
+    color:#555555;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+.footer .xtp {
+    font-size: 1.2rem;
+    color: #555555c4;
+    font-weight: 500;
+    vertical-align: sub;
+}
