@@ -29,21 +29,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
-    
 }
 
 #main .card {
     display: grid;
     grid-template-rows: 80px auto 80px;
-    min-width: 600px;
-    min-height: 300px;
+    width: 550px;
     height: 350px;
     background: #ccc;
     opacity: 0.7;
     border-radius: 45px;
     filter: drop-shadow(0 0 35px #fff);
-    
+    margin: 10px 8px;
 }
 
 #main .card:hover {
@@ -88,15 +85,28 @@ body {
     background: #40612c14;
     color:#555555;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     border-bottom-right-radius: 45px;
     border-bottom-left-radius: 45px;
 }
 
 .footer .xtp {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #555555c4;
     font-weight: 500;
     vertical-align: sub;
+}
+
+@media (max-width: 450px) {
+    #main {
+        padding: 0 8px;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+    .footer .xtp {
+        font-size: 0.8rem;
+    }
 }
