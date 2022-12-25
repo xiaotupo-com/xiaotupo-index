@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="xiaotupo" />
@@ -9,20 +10,46 @@
     <meta name="keywords" content="小土坡,编程开发,Rust,Vue,JavaScript,前端,软件开发" />
     <title>小土坡</title>
 
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./static/css/main.css">
     <link rel="shortcut icon" href="./static/images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <main id="main">
-        <div class="card">
-            <h1 id="title"><a href="/">小土坡</a></h1>
-            <div class="site-list">
-                <a href="https://xiaotupo.com/blog" title="进入我的博客">博客</a>
-            </div>
-            <div class="footer">
-                <p>xiaotupo@163.com <span class="xtp" title="https://xiaotupo.com">小土坡</span></p>
-            </div>
-        </div>
-    </main>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <header class="header text-center">
+                    <img src="./static/images/xiaotupo-logo.svg" alt="xiaotupo-logo" height="68px">
+                    <h1 class="site-title d-inline"><a href="/">小土坡</a></h1>
+                </header>
+                <hr class="hr col-md-6 offset-md-3">
+                <p class="my-sub-site text-center m-0">我的子站点</p>
+                <main class="col-md-6 offset-md-3 text-center">
+
+                    <a class="sub-site-item btn btn-outline-primary" href="https://xiaotupo.com/blog"
+                        title="进入我的博客">Blog</a>
+                    <a class="sub-site-item btn btn-outline-success" href="https://xiaotupo.com/rust"
+                        title="进入我的Rust笔记">Rust笔记</a>
+                    <a class="sub-site-item btn btn-outline-secondary" href="https://xiaotupo.com/esp32"
+                        title="进入我的Esp32笔记">ESP32笔记</a>
+                    <a class="sub-site-item btn btn-outline-danger" href="https://github.com/xiaotupo-com"
+                        title="进入我的Github">Github</a>
+                    <a class="sub-site-item btn btn-outline-info" href="https://space.bilibili.com/334715750/"
+                        title="进入我的哔哩哔哩">哔哩哔哩</a>
+
+                </main>
+
+                <footer class="text-center">
+                    <div class="footer">
+                        <p><span>&#169;</span><a href="https://xiaotupo.com">小土坡</a></p>
+                    </div>
+                </footer>
+            </div> <!-- col -->
+        </div> <!-- row -->
+    </div> <!-- container -->
+
+    <script src="./static/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

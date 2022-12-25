@@ -3,110 +3,71 @@
     网址：https://xiaotupo.com
 */
 
-* {
-    box-sizing: border-box;
-}
-a,a:hover {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: rgba(0, 0, 0, 0.648);
-}
 
 body {
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 0;
-    background-image: url(../images/bg.jpg);
-    font-size: 14px;
-}
-
-#main {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
-#main .card {
-    display: grid;
-    grid-template-rows: 80px auto 80px;
-    width: 550px;
-    height: 350px;
-    background: #ccc;
-    opacity: 0.7;
-    border-radius: 45px;
-    filter: drop-shadow(0 0 35px #fff);
-    margin: 10px 8px;
+
+.header {
+    /* margin: 30px 0; */
+    height: 68px;
 }
 
-#main .card:hover {
-    filter: drop-shadow(0 0 35px #ccc);
+.site-title {
+    font-size: 1.8rem;
+    line-height: 68px;
 }
 
-#title {
+.site-title a {
+    color: #07a081;
+    text-decoration: none;
+}
+
+.hr {
+    color: #ccc;
+}
+
+.my-sub-site {
+    letter-spacing: 0.25rem;
+    font-size: 1.15rem;
+    color: #999;
     
-    font-family: "Trebuchet MS", Arial, "Lucida Grande", Verdana, Lucida, Helvetica, sans-serif;
-    color: #888;
-    text-align: center;
+}
+main {
+    /* border: 1px solid #07a08118; */
+    margin: 12px 0 24px 0;
+    padding: 24px 12px;
+    border-radius: 12px;
+    /* box-shadow: 1px 1px 2px #ccc; */
 }
 
-#title a {
-    color: #40612C;
+main a {
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-bottom: 8px;
 }
 
-.site-list {
-    text-align: center;
-    padding: 12px 0;
+.sub-site-item {
+    text-decoration: none;
 }
 
-.site-list a {
-    background: #40612C;
-    color: #eee;
-    display: block;
-    width: 100%;
-    padding: 12px 8px;
-    font-size: 1.5rem;
+footer {
+    padding: 25px 0;
+    color: #999;
 }
 
-.site-list a:hover {
-    background-color: #348105;
-    color: white;
+footer a {
+    text-decoration: none;
+    color: #999;
 }
 
-.footer {
-    font-family:'Courier New', Courier, monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #40612c14;
-    color:#555555;
-    font-weight: 700;
-    font-size: 1.2rem;
-    text-align: center;
-    border-bottom-right-radius: 45px;
-    border-bottom-left-radius: 45px;
-}
-
-.footer .xtp {
-    font-size: 1rem;
-    color: #555555c4;
-    font-weight: 500;
-    vertical-align: sub;
-}
-
-@media (max-width: 450px) {
-    #main {
-        padding: 0 8px;
-    }
-
-    .footer {
-        font-size: 1rem;
-    }
-    .footer .xtp {
-        font-size: 0.8rem;
-    }
+footer a:hover {
+    color: #aaa;
 }
